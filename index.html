@@ -1,0 +1,210 @@
+<!--Catálogo de coleção individual-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecionador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="icone_site.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header>
+        <div id="navigation">
+            <nav>
+                <div id="search_bar">
+                    <form id="search">
+                        <input type="search" placeholder="Pesquise Aqui">
+                        <button type="submit">Pesquisar</button>
+                    </form>
+                </div>
+                <div id="filtros_nav">
+                    <div id="filtros_lista">
+                        <button class="filtro_nav">Filtro</button>
+                        <button class="filtro_nav">Filtro</button>
+                        <button class="filtro_nav">Filtro</button>
+                        <button class="filtro_nav">Filtro</button>
+                        <button class="filtro_nav">Filtro</button>
+                    </div>
+                </div>
+            </nav>
+            <div id="images">
+                <div class="images">
+                    <img src="acount.png" alt="Minha Conta">
+                </div>
+
+                <div class="images">
+                    <img src="my_colection.png" alt="Minha Coleção">
+                </div>
+                
+                <div class="image">
+                    <img src="colection.png" alt="Ícone do Site">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+        <!-- Filtros laterais -->
+            <aside id="filters_item" aria-label="Filtros da coleção" >  
+
+                <h2> Filtros </h2>  
+
+                <form id="filters_form">    
+
+                    <fieldset>  
+
+                        <legend>
+                            Filtrar itens
+                        </legend>   
+
+                    
+                        <label class="filter_item">
+                            <input type="checkbox" name="filter" value="Tipo"> Tipo
+                        </label>
+                    
+                        <label class="filter_item">
+                            <input type="checkbox" name="filter" value="Categoria"> Categoria
+                        </label>
+                    
+                        <label class="filter_item">
+                            <input type="checkbox" name="filter" value="Possuo"> Possuo
+                        </label>
+                    
+                        <label class="filter_item">
+                            <input type="checkbox" name="filter" value="Desejo"> Desejo
+                        </label>    
+
+
+                        <label class="filter_item">
+                            <input type="checkbox" name="filter" value="outros"> Outros
+                        </label>    
+
+
+                        <button type="submit">
+                            Aplicar filtros
+                        </button>   
+
+                    </fieldset> 
+
+                </form> 
+
+            </aside>
+        </div>  
+
+        <div class="container">
+            <section class="itens">
+
+                <article class="item">
+                    <h2 class="nameitem">O Um Anel</h2>
+                    <div class="image_item">
+                        <img src="o-um-anel-mtg.webp" alt="Imagem Do Item">
+                    </div>
+                    <div class="infos_do_item">
+                        <h3 class="origem">Magic: The Gathering</h3>
+                        <p class="raridade">Mítica</p>
+                    </div>
+                    <p class="description_item">
+                        Artefato lendário da Terra-média, criado para conceder ao seu portador um poder extraordinário. Um dos itens mais perigosos de seu universo, cuja posse pode alterar o destino de quem o encontra.
+                    </p>
+                    <label class="favorito"> <input type="checkbox"> Favoritar </label>                
+                    <label class="possui"> <input type="checkbox"> Possui </label>
+                    <label class="desejo"> <input type="checkbox"> Desejo </label>
+                </article>
+
+                <article class="item">
+                    <h2 class="nameitem">Gol D.Roger</h2>
+                    <div class="image_item">
+                        <img src="gol_d_roger.png" alt="Imagem Do Item">
+                    </div>
+                    <div class="infos_do_item">
+                        <h3 class="origem">One Piece Card Game</h3>
+                        <p class="raridade">Secret Rare</p>
+                    </div>
+                    <p class="description_item">
+                        O lendário Rei dos Piratas e capitão dos Piratas Roger. Conhecido por ter conquistado a Grand Line e alcançado o lendário tesouro One Piece, sua execução marcou o início da Grande Era dos Piratas. Sua história e seu legado continuam influenciando inúmeros piratas em busca de liberdade e aventura.
+                    </p>
+                    <label class="favorito"> <input type="checkbox"> Favoritar </label>                    
+                    <label class="possui"> <input type="checkbox"> Possui </label>
+                    <label class="desejo"> <input type="checkbox"> Desejo </label>
+                </article>
+                
+                <article class="item">
+                    <h2 class="nameitem">Charizard - Fogo Fantasmagórico</h2>
+                    <div class="image_item">
+                        <img src="charizard.jpeg" alt="Imagem Do Item">
+                    </div>
+                    <div class="infos_do_item">
+                        <h3 class="origem">Pokémon TCG — Fogo Fantasmagórico</h3>
+                        <p class="raridade">Ilustração Rara Especial (SIR)</p>
+                    </div>
+                    <p class="description_item">
+                        Uma das cartas mais marcantes da coleção Fogo Fantasmagórico, 
+                        apresentando o lendário Charizard em uma ilustração especial de Arte Rara. 
+                        Seu visual diferenciado e sua popularidade entre os fãs de Pokémon fazem 
+                        desta carta um item muito desejado por jogadores e colecionadores.
+
+                    </p>
+                    <label class="favorito"> <input type="checkbox"> Favoritar </label>
+                    <label class="possui"> <input type="checkbox"> Possui </label>
+                    <label class="desejo"> <input type="checkbox"> Desejo </label>
+                </article>
+                
+                <article class="item">
+                    <h2 class="nameitem">Black Lotus</h2>
+                    <div class="image_item">
+                        <img src="images.jpeg" alt="Imagem Do Item">
+                    </div>
+                    <div class="infos_do_item">
+                        <h3 class="origem">Magic: The Gathering</h3>
+                        <p class="raridade">Rara Mítica</p>
+                    </div>
+                    <p class="description_item">
+                        Uma das cartas mais famosas e cobiçadas de Magic: The Gathering. 
+                        Conhecida por sua enorme importância na história do card game, a Black Lotus 
+                        tornou-se um dos maiores símbolos de poder, raridade e valor entre colecionadores.
+                    </p>
+                    <label class="favorito"> <input type="checkbox"> Favoritar </label>
+                    <label class="possui"> <input type="checkbox"> Possui </label>
+                    <label class="desejo"> <input type="checkbox"> Desejo </label>
+                </article>
+                
+                <article class="item">
+                    <h2 class="nameitem">Dragão Branco de Olhos Azuis</h2>
+                    <div class="image_item">
+                        <img src="blue_eyes.jpeg" alt="Imagem Do Item">
+                    </div>
+                    <div class="infos_do_item">
+                        <h3 class="origem">Yu-Gi-Oh! — A Lenda do Dragão Branco de Olhos Azuis</h3>
+                        <p class="raridade">Ultra Rara</p>
+                    </div>
+                    <p class="description_item"> 
+                        Uma das cartas mais icônicas de Yu-Gi-Oh!, conhecida por seu enorme poder de ataque e por sua presença marcante na história do card game. Associado a um dos monstros mais poderosos e reconhecidos da franquia, o Blue-Eyes White Dragon tornou-se uma carta extremamente popular entre jogadores e colecionadores.
+                    </p>
+                    <label class="favorito"> <input type="checkbox"> Favoritar </label>
+                    <label class="possui"> <input type="checkbox"> Possui </label>
+                    <label class="desejo"> <input type="checkbox"> Desejo </label>
+
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="container">
+            <div id="create">
+                <button>Criar Conta</button>
+            </div>
+            <div id="login">
+                <button>Login</button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
