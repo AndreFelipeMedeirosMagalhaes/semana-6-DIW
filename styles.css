@@ -1,4 +1,4 @@
-    /* ========================================
+/* ========================================
    CONFIGURAÇÕES GERAIS
 ======================================== */
 
@@ -166,7 +166,6 @@ main {
     width: 90%;
     margin: 35px auto;
     display: flex;
-    gap: 25px;
 }
 
 
@@ -174,11 +173,6 @@ main {
 /* ========================================
    FILTROS LATERAIS
 ======================================== */
-
-main > .container:first-child {
-    width: 220px;
-    flex-shrink: 0;
-}
 
 #filters_item {
     padding: 20px;
@@ -249,15 +243,13 @@ main > .container:first-child {
    ÁREA DOS ITENS
 ======================================== */
 
-main > .container:last-child {
-    flex: 1;
-    min-width: 0;
-}
+/*
+   O Bootstrap agora controla as colunas
+   através de .row e .col-*.
+*/
 
 .itens {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    width: 100%;
 }
 
 
@@ -384,7 +376,9 @@ main > .container:last-child {
 
 
 
-/* FAVORITO */
+/* ========================================
+   FAVORITO
+======================================== */
 
 .favorito {
     background-color: #fff0f5;
@@ -404,7 +398,9 @@ main > .container:last-child {
 
 
 
-/* POSSUI */
+/* ========================================
+   POSSUI
+======================================== */
 
 .possui {
     background-color: #edf9f1;
@@ -424,7 +420,9 @@ main > .container:last-child {
 
 
 
-/* DESEJO */
+/* ========================================
+   DESEJO
+======================================== */
 
 .desejo {
     background-color: #fff8e8;
@@ -472,7 +470,9 @@ footer .container {
 
 
 
-/* CRIAR CONTA */
+/* ========================================
+   CRIAR CONTA
+======================================== */
 
 #create button {
     border: 1px solid #f4b942;
@@ -489,7 +489,9 @@ footer .container {
 
 
 
-/* LOGIN */
+/* ========================================
+   LOGIN
+======================================== */
 
 #login button {
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -501,270 +503,4 @@ footer .container {
 #login button:hover {
     background-color: rgba(255, 255, 255, 0.22);
     transform: translateY(-2px);
-}
-
-
-
-/* ========================================
-   RESPONSIVIDADE
-======================================== */
-
-
-/* ========================================
-   TELAS MÉDIAS
-   Tablets / notebooks menores
-======================================== */
-
-@media (max-width: 1200px) {
-
-    #navigation {
-        width: 94%;
-    }
-
-    main {
-        width: 94%;
-    }
-
-    .itens {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-
-/* ========================================
-   TABLETS
-======================================== */
-
-@media (max-width: 900px) {
-
-    #navigation {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    #navigation nav {
-        width: 100%;
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    #search_bar {
-        width: 100%;
-    }
-
-    #filtros_nav {
-        width: 100%;
-    }
-
-    #filtros_lista {
-        width: 100%;
-        flex-wrap: wrap;
-    }
-
-    .filtro_nav {
-        flex: 1;
-        min-width: 80px;
-    }
-
-    #images {
-        justify-content: center;
-        padding-top: 5px;
-    }
-
-
-    main {
-        width: 94%;
-        flex-direction: column;
-    }
-
-    main > .container:first-child {
-        width: 100%;
-    }
-
-    #filters_item {
-        width: 100%;
-    }
-
-    #filters_form fieldset {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-    }
-
-    #filters_form button {
-        grid-column: 1 / -1;
-    }
-
-}
-
-
-
-/* ========================================
-   CELULARES
-======================================== */
-
-@media (max-width: 600px) {
-
-    #navigation {
-        width: 94%;
-        padding: 12px 0;
-    }
-
-    #navigation nav {
-        gap: 12px;
-    }
-
-    #search {
-        width: 100%;
-    }
-
-    #search input {
-        min-width: 0;
-        padding: 10px;
-    }
-
-    #search button {
-        padding: 10px 12px;
-    }
-
-
-    #filtros_lista {
-        gap: 5px;
-    }
-
-    .filtro_nav {
-        flex: 1 1 calc(50% - 5px);
-        min-width: 0;
-    }
-
-
-    #images {
-        gap: 15px;
-    }
-
-    #images .images,
-    #images .image {
-        width: 42px;
-        height: 42px;
-    }
-
-    #images img {
-        width: 32px;
-        height: 32px;
-    }
-
-
-    main {
-        width: 94%;
-        margin: 20px auto;
-        gap: 18px;
-    }
-
-
-    #filters_item {
-        padding: 16px;
-    }
-
-    #filters_item h2 {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-
-    #filters_form fieldset {
-        grid-template-columns: 1fr;
-        gap: 6px;
-    }
-
-    #filters_form button {
-        grid-column: auto;
-    }
-
-
-    .itens {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-
-    .item {
-        padding: 14px;
-    }
-
-
-    .nameitem {
-        font-size: 17px;
-    }
-
-
-    .image_item {
-        height: 240px;
-    }
-
-
-    .description_item {
-        font-size: 14px;
-    }
-
-
-    .favorito,
-    .possui,
-    .desejo {
-        padding: 10px;
-    }
-
-
-    footer {
-        margin-top: 20px;
-        padding: 20px;
-    }
-
-}
-
-
-
-/* ========================================
-   CELULARES PEQUENOS
-======================================== */
-
-@media (max-width: 400px) {
-
-    #search button {
-        padding: 10px;
-        font-size: 13px;
-    }
-
-    .filtro_nav {
-        font-size: 13px;
-        padding: 8px;
-    }
-
-
-    #images {
-        gap: 10px;
-    }
-
-
-    main {
-        width: 92%;
-    }
-
-
-    .image_item {
-        height: 210px;
-    }
-
-
-    .item {
-        padding: 12px;
-    }
-
-
-    #create button,
-    #login button {
-        padding: 9px 14px;
-        font-size: 13px;
-    }
-
 }
